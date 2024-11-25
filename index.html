@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de BTU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de BTU para Ar-Condicionado</h1>
+  </header>
+
+  <main>
+    <form id="btuForm">
+      <fieldset>
+        <legend>Dimensões do Ambiente</legend>
+        <label for="length">Comprimento (m):</label>
+        <input type="number" id="length" name="length" min="0" step="0.1" required>
+
+        <label for="width">Largura (m):</label>
+        <input type="number" id="width" name="width" min="0" step="0.1" required>
+
+        <label for="height">Altura (m):</label>
+        <input type="number" id="height" name="height" min="0" step="0.1" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Características das Paredes</legend>
+        <label for="wallThickness">Espessura das paredes (cm):</label>
+        <input type="number" id="wallThickness" name="wallThickness" min="0" step="0.1" required>
+
+        <label for="wallMaterial">Material das paredes:</label>
+        <select id="wallMaterial" name="wallMaterial" required>
+          <option value="concreto">Concreto</option>
+          <option value="tijolo">Tijolo</option>
+          <option value="madeira">Madeira</option>
+          <option value="outro">Outro</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fontes de Calor</legend>
+        <label for="people">Número de Pessoas:</label>
+        <input type="number" id="people" name="people" min="0" step="1" required>
+
+        <label for="equipment">Número de Equipamentos:</label>
+        <input type="number" id="equipment" name="equipment" min="0" step="1" required>
+
+        <label for="lights">Quantidade de Lâmpadas:</label>
+        <input type="number" id="lights" name="lights" min="0" step="1" required>
+
+        <label for="lightType">Tipo de Lâmpadas:</label>
+        <select id="lightType" name="lightType" required>
+          <option value="led">LED</option>
+          <option value="fluorescente">Fluorescente</option>
+          <option value="incandescente">Incandescente</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Isolamento Térmico</legend>
+        <label for="insulatedArea">Área isolada (m²):</label>
+        <input type="number" id="insulatedArea" name="insulatedArea" min="0" step="0.1" required>
+      </fieldset>
+
+      <button type="button" onclick="calculateBTU()">Calcular</button>
+    </form>
+
+    <section id="resultSection">
+      <h2>Resultado</h2>
+      <p id="result">Preencha os campos e clique em "Calcular" para obter o resultado.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido para dimensionamento de ar-condicionado.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

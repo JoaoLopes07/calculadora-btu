@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #0078D7;
+  }
+  
+  /* Main Container */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fieldset Styling */
+  form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  form legend {
+    font-size: 1.2rem;
+    color: #0078D7;
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  form input:focus, form select:focus {
+    outline: none;
+    border-color: #0078D7;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+  }
+  
+  /* Button Styling */
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0078D7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005BB5;
+  }
+  
+  /* Result Section */
+  #resultSection {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #resultSection h2 {
+    font-size: 1.5rem;
+    color: #0078D7;
+    margin-bottom: 10px;
+  }
+  
+  #resultSection p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+  
